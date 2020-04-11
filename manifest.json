@@ -1,0 +1,33 @@
+{
+  "name": "Hide YouTube Endscreen",
+  "version": "1.1.0",
+  "description": "Hides YouTube endscreen so you don't miss the climax part of the music video or movie clip",
+  "permissions": ["declarativeContent"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "run_at": "document_idle",
+      "js": ["content.js"],
+      "all_frames": false
+    }
+  ],
+  "page_action": {
+    "default_icon": {
+      "16": "img/logo.png",
+      "32": "img/logo.png",
+      "48": "img/logo.png",
+      "128": "img/logo.png"
+    }
+  },
+  "icons": {
+    "16": "img/logo.png",
+    "32": "img/logo.png",
+    "48": "img/logo.png",
+    "128": "img/logo.png"
+  },
+  "manifest_version": 2
+}
