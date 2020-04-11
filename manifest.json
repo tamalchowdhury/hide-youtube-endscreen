@@ -17,17 +17,17 @@
   ],
   "page_action": {
     "default_icon": {
-      "16": "img/logo.png",
-      "32": "img/logo.png",
-      "48": "img/logo.png",
-      "128": "img/logo.png"
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
     }
   },
   "icons": {
-    "16": "img/logo.png",
-    "32": "img/logo.png",
-    "48": "img/logo.png",
-    "128": "img/logo.png"
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   },
   "manifest_version": 2
 }
