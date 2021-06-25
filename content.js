@@ -6,7 +6,7 @@ const DELAY = 5;
  */
 function main() {
   // Target and get all the endscreen items
-  var allEndscreenItems = document.querySelectorAll('.ytp-ce-element');
+  let allEndscreenItems = document.querySelectorAll('.ytp-ce-element');
 
   // Hide them all
   allEndscreenItems.forEach((item) => (item.style.display = 'none'));
