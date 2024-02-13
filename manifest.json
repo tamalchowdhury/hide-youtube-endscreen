@@ -1,11 +1,12 @@
 {
+  "manifest_version": 3,
   "name": "Hide YouTube End Cards",
-  "version": "1.3.0",
+  "version": "2.0",
   "description": "Hides YouTube end cards so you don't miss the climax part of the music video or movie clip",
   "permissions": ["declarativeContent"],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js",
+    "type": "module"
   },
   "content_scripts": [
     {
@@ -15,7 +16,7 @@
       "all_frames": false
     }
   ],
-  "page_action": {
+  "action": {
     "default_icon": {
       "16": "icon.png",
       "32": "icon.png",
@@ -28,6 +29,5 @@
     "32": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
-  },
-  "manifest_version": 2
+  }
 }
